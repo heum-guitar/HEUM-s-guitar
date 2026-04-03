@@ -55,7 +55,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 120px 24px 80px;
+    padding: 120px 24px 160px;
     position: relative;
   }
   .hero-inner::before {
@@ -231,7 +231,7 @@
     word-break: keep-all;
     text-align: center;
   }
-  .concept-body { font-size: 16px; color: #333; line-height: 2; word-break: keep-all; text-align: center; }
+  .concept-body { font-size: 16px; color: #333; line-height: 2; word-break: break-word; overflow-wrap: break-word; text-align: center; }
   .concept-body p { margin-bottom: 20px; }
   .concept-body strong { color: var(--black); font-weight: 700; }
   .concept-highlight {
@@ -805,6 +805,18 @@
     .credentials { grid-template-columns: 1fr 1fr; }
     .benefits-grid { grid-template-columns: 1fr; }
     .letter { padding: 28px 20px; }
+    .hero-inner { padding: 120px 24px 180px; }
+    .instructor-bg {
+      width: 28%;
+      height: 50%;
+      top: 50%;
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 60%, transparent 90%);
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 60%, transparent 90%);
+    }
+    .concept-body { text-align: left; }
   }
 </style>
 </head>
