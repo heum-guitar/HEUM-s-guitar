@@ -74,7 +74,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Ctext x='20'  y='60'  font-family='Georgia,serif' font-size='28' fill='%23a09890' opacity='0.07' transform='rotate(-15 20 60)'%3E%3F%3C/text%3E%3Ctext x='110' y='40'  font-family='Georgia,serif' font-size='20' fill='%23a09890' opacity='0.06' transform='rotate(25 110 40)'%3E%3F%3C/text%3E%3Ctext x='200' y='80'  font-family='Georgia,serif' font-size='34' fill='%23a09890' opacity='0.05' transform='rotate(-5 200 80)'%3E%3F%3C/text%3E%3Ctext x='60'  y='140' font-family='Georgia,serif' font-size='22' fill='%23a09890' opacity='0.07' transform='rotate(40 60 140)'%3E%3F%3C/text%3E%3Ctext x='160' y='150' font-family='Georgia,serif' font-size='30' fill='%23a09890' opacity='0.05' transform='rotate(-30 160 150)'%3E%3F%3C/text%3E%3Ctext x='270' y='130' font-family='Georgia,serif' font-size='18' fill='%23a09890' opacity='0.08' transform='rotate(10 270 130)'%3E%3F%3C/text%3E%3Ctext x='30'  y='220' font-family='Georgia,serif' font-size='26' fill='%23a09890' opacity='0.06' transform='rotate(55 30 220)'%3E%3F%3C/text%3E%3Ctext x='130' y='240' font-family='Georgia,serif' font-size='16' fill='%23a09890' opacity='0.08' transform='rotate(-20 130 240)'%3E%3F%3C/text%3E%3Ctext x='230' y='210' font-family='Georgia,serif' font-size='32' fill='%23a09890' opacity='0.05' transform='rotate(35 230 210)'%3E%3F%3C/text%3E%3Ctext x='80'  y='295' font-family='Georgia,serif' font-size='24' fill='%23a09890' opacity='0.07' transform='rotate(-45 80 295)'%3E%3F%3C/text%3E%3Ctext x='190' y='300' font-family='Georgia,serif' font-size='20' fill='%23a09890' opacity='0.06' transform='rotate(18 190 300)'%3E%3F%3C/text%3E%3Ctext x='290' y='280' font-family='Georgia,serif' font-size='28' fill='%23a09890' opacity='0.05' transform='rotate(-8 290 280)'%3E%3F%3C/text%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Ctext x='20'  y='60'  font-family='Georgia,serif' font-size='28' fill='%23a09890' opacity='0.13' transform='rotate(-15 20 60)'%3E%3F%3C/text%3E%3Ctext x='110' y='40'  font-family='Georgia,serif' font-size='20' fill='%23a09890' opacity='0.11' transform='rotate(25 110 40)'%3E%3F%3C/text%3E%3Ctext x='200' y='80'  font-family='Georgia,serif' font-size='34' fill='%23a09890' opacity='0.10' transform='rotate(-5 200 80)'%3E%3F%3C/text%3E%3Ctext x='60'  y='140' font-family='Georgia,serif' font-size='22' fill='%23a09890' opacity='0.13' transform='rotate(40 60 140)'%3E%3F%3C/text%3E%3Ctext x='160' y='150' font-family='Georgia,serif' font-size='30' fill='%23a09890' opacity='0.10' transform='rotate(-30 160 150)'%3E%3F%3C/text%3E%3Ctext x='270' y='130' font-family='Georgia,serif' font-size='18' fill='%23a09890' opacity='0.14' transform='rotate(10 270 130)'%3E%3F%3C/text%3E%3Ctext x='30'  y='220' font-family='Georgia,serif' font-size='26' fill='%23a09890' opacity='0.11' transform='rotate(55 30 220)'%3E%3F%3C/text%3E%3Ctext x='130' y='240' font-family='Georgia,serif' font-size='16' fill='%23a09890' opacity='0.14' transform='rotate(-20 130 240)'%3E%3F%3C/text%3E%3Ctext x='230' y='210' font-family='Georgia,serif' font-size='32' fill='%23a09890' opacity='0.10' transform='rotate(35 230 210)'%3E%3F%3C/text%3E%3Ctext x='80'  y='295' font-family='Georgia,serif' font-size='24' fill='%23a09890' opacity='0.12' transform='rotate(-45 80 295)'%3E%3F%3C/text%3E%3Ctext x='190' y='300' font-family='Georgia,serif' font-size='20' fill='%23a09890' opacity='0.11' transform='rotate(18 190 300)'%3E%3F%3C/text%3E%3Ctext x='290' y='280' font-family='Georgia,serif' font-size='28' fill='%23a09890' opacity='0.10' transform='rotate(-8 290 280)'%3E%3F%3C/text%3E%3C/svg%3E");
     background-repeat: repeat;
     background-size: 320px 320px;
     pointer-events: none;
@@ -251,7 +251,18 @@
   }
 
   /* PERSONA */
-  #persona { background: var(--black); text-align: center; }
+  #persona { background: var(--black); text-align: center; position: relative; overflow: hidden; }
+  #persona::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Ctext x='18'  y='85'  font-family='Georgia,serif' font-size='48' fill='%23d4b252' opacity='0.07' transform='rotate(-22 18 85)'%3E!%3C/text%3E%3Ctext x='155' y='38'  font-family='Georgia,serif' font-size='28' fill='%23d4b252' opacity='0.05' transform='rotate(37 155 38)'%3E!%3C/text%3E%3Ctext x='290' y='110' font-family='Georgia,serif' font-size='56' fill='%23d4b252' opacity='0.04' transform='rotate(-8 290 110)'%3E!%3C/text%3E%3Ctext x='72'  y='195' font-family='Georgia,serif' font-size='32' fill='%23d4b252' opacity='0.08' transform='rotate(51 72 195)'%3E!%3C/text%3E%3Ctext x='210' y='175' font-family='Georgia,serif' font-size='52' fill='%23d4b252' opacity='0.05' transform='rotate(-41 210 175)'%3E!%3C/text%3E%3Ctext x='365' y='55'  font-family='Georgia,serif' font-size='36' fill='%23d4b252' opacity='0.06' transform='rotate(14 365 55)'%3E!%3C/text%3E%3Ctext x='40'  y='320' font-family='Georgia,serif' font-size='44' fill='%23d4b252' opacity='0.06' transform='rotate(63 40 320)'%3E!%3C/text%3E%3Ctext x='175' y='295' font-family='Georgia,serif' font-size='30' fill='%23d4b252' opacity='0.07' transform='rotate(-17 175 295)'%3E!%3C/text%3E%3Ctext x='315' y='250' font-family='Georgia,serif' font-size='58' fill='%23d4b252' opacity='0.04' transform='rotate(28 315 250)'%3E!%3C/text%3E%3Ctext x='110' y='395' font-family='Georgia,serif' font-size='38' fill='%23d4b252' opacity='0.07' transform='rotate(-55 110 395)'%3E!%3C/text%3E%3Ctext x='255' y='380' font-family='Georgia,serif' font-size='26' fill='%23d4b252' opacity='0.06' transform='rotate(9 255 380)'%3E!%3C/text%3E%3Ctext x='385' y='340' font-family='Georgia,serif' font-size='46' fill='%23d4b252' opacity='0.05' transform='rotate(-33 385 340)'%3E!%3C/text%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 420px 420px;
+    pointer-events: none;
+    z-index: 0;
+  }
+  #persona .container { position: relative; z-index: 1; }
   .persona-title {
     font-family: 'Noto Serif KR', serif;
     font-size: clamp(26px, 5vw, 40px);
@@ -285,9 +296,9 @@
   /* INSTRUCTOR */
   #instructor {
     background: var(--dark);
-    background-image: url('https://res.cloudinary.com/dbkuuw1xf/image/upload/v1775260722/profile_ikxbqw.jpg');
-    background-size: auto 100%;
-    background-position: top center;
+    background-image: url('https://res.cloudinary.com/dbkuuw1xf/image/upload/q_auto/f_auto/v1775262176/paper_texture_bg_hsmesr.jpg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
@@ -310,7 +321,7 @@
     color: var(--cream);
     margin-bottom: 8px;
   }
-  .instructor-title { font-size: 14px; color: var(--muted); letter-spacing: 0.1em; margin-bottom: 28px; }
+  .instructor-title { font-size: 14px; color: var(--text); letter-spacing: 0.1em; margin-bottom: 28px; }
   .instructor-portrait {
     width: 160px;
     height: 160px;
@@ -341,14 +352,14 @@
     font-size: 28px; font-weight: 700;
     color: var(--gold); line-height: 1; margin-bottom: 6px;
   }
-  .cred-label { font-size: 12px; color: var(--muted); line-height: 1.4; word-break: keep-all; }
+  .cred-label { font-size: 12px; color: var(--text); line-height: 1.4; word-break: keep-all; }
   .letter {
     background: var(--black);
     border: 1px solid var(--border);
     border-radius: 20px;
     padding: 40px 36px;
     font-size: clamp(13px, 3.5vw, 15px);
-    color: var(--text);
+    color: var(--cream);
     line-height: 2;
     word-break: keep-all;
     position: relative; z-index: 1;
@@ -824,8 +835,8 @@
     .cta-title { font-size: clamp(22px, 6vw, 30px); line-height: 1.5; }
     .cta-sub { font-size: 13px; margin-bottom: 36px; }
     #instructor {
-      background-size: auto 100%;
-      background-position: top center;
+      background-size: cover;
+      background-position: center;
     }
     .timeline-item { grid-template-columns: 64px 1fr; gap: 16px; padding: 20px 0; }
     .target-card, .target-card--link { padding: 20px 20px; }
